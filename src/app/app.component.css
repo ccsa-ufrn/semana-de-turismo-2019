@@ -1,0 +1,17 @@
+.purple1{
+  background:#AC348C !important;
+  border-radius:0;
+
+}
+.logo{
+  margin-top:-3px;
+  padding-top:0;
+
+}
+header{
+  background:#40acac !important;
+  box-shadow:none;
+}
+section.register{
+  background:#AC348C !important;
+}
