@@ -30,13 +30,12 @@ export class GeralService {
   host: string = 'https://seminario2017.ccsa.ufrn.br';
 
   public getGts(): Observable<Array<ThematicGroup>> {
-    return this._http.get('/thematicgroups.json')
+      return this._http.get('https://sigeva.ccsa.ufrn.br/api/event/5d56aa2c22b502760d9c9d2a/gts/all')
       .map((res: any) => { return res.json().data });
   }
 
   public getNews(): Observable<Array<News>> {
-      return this._http
-        .get('https://sigeva.ccsa.ufrn.br/api/event/5b5a019840c62f2d3b3d7390/news/all')
+      return this._http.get('https://sigeva.ccsa.ufrn.br/api/event/5d56aa2c22b502760d9c9d2a/news/all')
         .map((res: any) => { return res.json().data });
   }
 
